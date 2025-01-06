@@ -24,7 +24,7 @@ function ListaProdutos() {
 
     async function buscarProdutos() {
         try {
-            await buscar('/produtos', setProdutos, {
+            await buscar('/produtos/todos', setProdutos, {
                 headers: {
                     Authorization: token,
                 },
